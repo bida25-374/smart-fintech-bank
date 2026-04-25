@@ -47,7 +47,7 @@
 <section class="section">
     <h2>Send Message</h2>
 
-    <form onsubmit="submitForm()">
+    <form onsubmit="submitForm(); return false;">
         <label>Name:</label><br>
         <input type="text" name="name"><br><br>
 
@@ -56,6 +56,9 @@
 
         <label>Phone:</label><br>
         <input type="text" name="phone"><br><br>
+
+        <label>Message:</label><br>
+        <input type="text" name="message"><br><br>
 
         <button type="submit">Submit</button>
     </form>
