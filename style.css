@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+     font-family: Arial, sans-serif;
 }
 
 /* HEADER */
@@ -25,18 +25,95 @@ nav a {
 
 /* HERO */
 .hero {
-    background: url(https://tse2.mm.bing.net/th/id/OIP.ylh54iSeT8Ze6bGVDX1zrgHaCH?rs=1&pid=ImgDetMain&o=7&rm=3) no-repeat center/cover;
-    color: white;
+    background: url("images/home.jpg") no-repeat center/cover;
+    height: 500px;
+    color: rgb(10, 4, 4);
     text-align: center;
     padding: 100px 20px;
 }
 
 .hero button {
-    background: #ff9900;
+    background: #0a2a66;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+       transition: background-color 0.3s, color 0.3s;  
+       align-items: center;
+        
+}
+
+.hero button:hover {
+    background: #ff9900;
+    color: rgb(238, 238, 243);
+}
+
+
+/*ABOUT PAGE IMAGE*/
+    .hero-about {
+    background: url("images/about.jpg") no-repeat center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*CONTACT PAGE IMAGE*/
+.hero-contact {
+    background: url("images/contact.jpg") no-repeat center/cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* ONLINE BANKING BACKGROUND */
+.login-bg {
+    background:url("images/login.jpg") no-repeat center/cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*services page image*/
+.hero-services {
+    background:url("c:\\Users\\theet\\OneDrive - Botswana Accountancy College\\WMDASSINGMENT2026\\images\\service.jpg") no-repeat center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(254, 254, 255);
+    font-size: 30px;
+    text-align: high-center;
+}
+
+.card button {
+    background: #0a2a66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background: #ff9900;
+}
+
+.login-box {
+    background: rgba(120, 123, 150, 0.9);
+    padding: 45px;
+    border-radius: 20px;
+    text-align: center;
+
 }
 
 /* SECTIONS */
@@ -60,10 +137,45 @@ nav a {
     border-radius: 10px;
 }
 
+/* FORM CONTAINER */
+.section form{
+    dispaly: felx;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*input fileds*/
+.section input {
+    width: 300px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button */
+.section button {
+    background: #0a2a66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.section button:hover {
+    background: #ff9900;
+    color: rgb(238, 238, 243);
+}
+
+
+
 /* FOOTER */
 footer {
     background: #0a2a66;
     color: white;
     text-align: center;
     padding: 15px;
-}
+} 
+  
+
