@@ -71,9 +71,10 @@
             <p>Fill in your details to create an account.</p>
 
             <div class="form-box">
-            <form>
+            <form onsubmit="submitSavings(); return false;">
                 <input type="text" name="name" placeholder="Full Name"><br><br>
                 <input type="email" name="email" placeholder="Email"><br><br>
+                <input type="number" name="savings-amount" placeholder="Savings Amount"><br><br>
                 <button>Create Account</button>
             </form>
             </div>
@@ -85,7 +86,7 @@
             <p>Fill in your details to apply for a loan.</p>
 
             <div class="form-box">
-            <form>
+            <form onsubmit="submitLoan(); return false;">
                 <input type="text" name="name" placeholder="Full Name"><br><br>
                 <input type="email" name="email" placeholder="Email"><br><br>
                 <input type="number" name="loan-amount" placeholder="Loan Amount"><br><br>
