@@ -5,6 +5,8 @@
      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services- SmartFintechBank</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,43 +26,83 @@
     </nav>
 </header>
 
-<!--OUR SERVICES-->
-<section class="section">
+<!-- SERVICES IMAGE -->
+<section class="hero-services">
     <h1>Our Services</h1>
+</section>
 
+<!-- SERVICES CONTENT -->
+<section class="section">
     <div class="services">
 
-        <!--Savings-->
+        
         <div class="card">
             <h3>Savings Accounts</h3>
             <p>
                 Secure and flexible savings accounts designed to help you grow your money safely.
             </p>
+            <button onclick="goToSection('savings-section')">Learn More</button>
         </div>
 
         <!-- Loans -->
          <div class="card">
          <h3>Loans</h3>
          <p>
-
             Affordable and flexible loan options to supoort your personal and business needs.
          </p>
+         <button onclick="goToSection('loans-section')">Apply Now</button>
         </div>
 
         <!-- Online Banking-->
          <div class="card">
             <h3>Online Banking</h3>
             <p>
-
-                Access yout account ,anywhere with our secure digital banking platform.
+                Access your account ,anywhere with our secure digital banking platform.
             </p>
+            <button onclick="window.location.href='online.html'">Access Online Banking</button>
         </div>
+
+    </div>
+    </section>
+
+        <!-- SAVINGS SECTION -->
+        <section id="savings-section" class="section">
+            <h2>open a savings account</h2>
+            <p>Fill in your details to create an account.</p>
+
+            <div class="form-box">
+            <form>
+                <input type="text" name="name" placeholder="Full Name"><br><br>
+                <input type="email" name="email" placeholder="Email"><br><br>
+                <button>Create Account</button>
+            </form>
+            </div>
+        </section>
+
+        <!-- LOAN SECTION -->
+        <section id="loans-section" class="section">
+            <h2>Apply for a Loan</h2>
+            <p>Fill in your details to apply for a loan.</p>
+
+            <div class="form-box">
+            <form>
+                <input type="text" name="name" placeholder="Full Name"><br><br>
+                <input type="email" name="email" placeholder="Email"><br><br>
+                <input type="number" name="loan-amount" placeholder="Loan Amount"><br><br>
+                <button>Apply for Loan</button>
+            </form>
+        </section>
 
         <!-- FOOTER -->
          <footer>
-            <p>© 2026 SmartFintechBank. All rights reserved.</p>
+            <p> © 2026 SmartFintechBank. All rights reserved. </p>
          </footer>
 
+<!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
         </body>
         </html>
 
