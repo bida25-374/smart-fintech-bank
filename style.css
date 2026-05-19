@@ -84,7 +84,7 @@ nav a {
 
 /*services page image*/
 .hero-services {
-    background:url("c:\\Users\\theet\\OneDrive - Botswana Accountancy College\\WMDASSINGMENT2026\\images\\service.jpg") no-repeat center/cover;
+    background:url("images/service.jpg") no-repeat center/cover;
     height: 500px;
     display: flex;
     align-items: center;
